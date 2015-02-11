@@ -6,6 +6,8 @@ def are_characters_unique(string):
     ASCII characters (256)
     O(n)
     """
+    if len(string) > 256:
+        return False
     char_checker_array = [False]*256
     for ch in string:
         if char_checker_array[ord(ch)] == True:
