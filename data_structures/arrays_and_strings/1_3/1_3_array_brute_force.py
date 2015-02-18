@@ -9,6 +9,7 @@ def is_permutation(string1, string2):
     char_tracker_array_string2 = [0] * 256
     for ch in string1:
         char_tracker_array_string1[ord(ch)] += 1
+
     #TODO: Get rid of unneeded loops.
     for ch2 in string2:
         char_tracker_array_string2[ord(ch2)] += 1
