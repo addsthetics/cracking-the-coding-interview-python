@@ -22,7 +22,7 @@ def main():
         [7, 8, 9]
     ])
 
-    print(rotate_in_place([
+    print(rotate_pixels([
         [2, 3, 4, 5],
         [3, 4, 5, 6],
         [4, 5, 6, 7],
