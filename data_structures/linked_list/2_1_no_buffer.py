@@ -3,8 +3,8 @@ from singly_linked_list_lib.singly_linked_list import SinglyLinkedList
 
 def remove_duplicates(head_node):
     """
-    Time Complexity:
-    Space Complexity:
+    Time Complexity: O(n^2)
+    Space Complexity: O(1)?
     """
     if head_node is None:
         return 'This is empty!'
