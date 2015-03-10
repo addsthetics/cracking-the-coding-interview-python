@@ -3,10 +3,10 @@ from singly_linked_list_lib.singly_linked_list import SinglyLinkedList
 
 def remove_duplicates(head_node):
     """
-    Time Complexity:
-    Space Complexity:
+    Time Complexity: O(n)
+    Space Complexity: O(1)
     """
-    if head_node == None:
+    if head_node is not None:
         return 'This is empty!'
 
     char_dict = dict()
