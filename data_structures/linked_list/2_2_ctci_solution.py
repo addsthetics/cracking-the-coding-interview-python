@@ -6,22 +6,23 @@ def find_kth_last(head_node, k):
     Time Complexity: O(N)
     Space Complexity: O(1)
     """
-    if head_node == None or k <= 0:
-        return None
-    #Calculate Length
-    length = 0
-    current_node = head_node
-    while current_node is not None:
-        current_node = current_node.get_next_node()
-        length += 1
-    if length < k:
+    if k <= 0:
         return None
 
-    res_node = head_node
-    for i in range(length - k):
-        res_node = res_node.get_next_node()
-    return res_node
+    p1 = head_node
+    p2 = head_node
 
+    for i in range(k - 1):
+        if p2 is None:
+            return None
+        p2 = p2.get_next_node()
+    if p2 is None:
+        return None
+
+    while p2.get_next_node() is not None:
+        p1 = p1.get_next_node()
+        p2 = p2.get_next_node()
+    return p1
 
 def main():
     list1 = SinglyLinkedList()
