@@ -1,4 +1,4 @@
-from singly_linked_list_node import SinglyLinkedListNode
+from singly_linked_list_lib.singly_linked_list_node import SinglyLinkedListNode
 
 
 class SinglyLinkedList(object):

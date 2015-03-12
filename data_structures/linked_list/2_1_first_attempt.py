@@ -6,7 +6,7 @@ def remove_duplicates(head_node):
     Time Complexity: O(n)
     Space Complexity: O(1)
     """
-    if head_node is not None:
+    if head_node is None:
         return 'This is empty!'
 
     char_dict = dict()
