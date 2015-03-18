@@ -3,10 +3,16 @@ from singly_linked_list_lib.singly_linked_list_node import SinglyLinkedListNode
 
 
 def delete_node_middle(node):
+    """
+    Time Complexity: O(1)
+    Space Complexity: O(1)
+    NOTE: Close to CTCI solution
+    """
     if node is None or node.get_next_node() is None:
         return
     node.set_value(node.next_node.value)
     node.set_next_node(node.next_node.next_node)
+
 
 def main():
     list1 = SinglyLinkedList()
