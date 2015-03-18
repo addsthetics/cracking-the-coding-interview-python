@@ -39,6 +39,14 @@ class SinglyLinkedList(object):
         """
         self.add_to_back(value)
 
+    def add_node(self, node):
+        if self.is_empty():
+            self.head = node
+        else:
+            self.tail.set_next_node(node)
+        self.tail = node
+        self.length += 1
+
     def remove_front(self):
         if not self.is_empty():
             self.head = self.head.get_next_node()
